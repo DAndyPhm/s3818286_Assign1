@@ -19,7 +19,6 @@
 		3E32CDD62898E84F008FDED2 /* AnimeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E32CDD52898E84F008FDED2 /* AnimeList.swift */; };
 		3E32CDD82898EC1A008FDED2 /* AnimeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E32CDD72898EC1A008FDED2 /* AnimeDetail.swift */; };
 		3E32CDDA2898F07E008FDED2 /* AnimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E32CDD92898F07E008FDED2 /* AnimeData.swift */; };
-		3E32CDDC2898FA7B008FDED2 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E32CDDB2898FA7B008FDED2 /* CircleImage.swift */; };
 		3E46A557289B8E0400BEF25D /* WelcomeStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E46A556289B8E0400BEF25D /* WelcomeStatement.swift */; };
 		3E46A559289B8E1400BEF25D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E46A558289B8E1400BEF25D /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
@@ -57,7 +56,6 @@
 		3E32CDD52898E84F008FDED2 /* AnimeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeList.swift; sourceTree = "<group>"; };
 		3E32CDD72898EC1A008FDED2 /* AnimeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetail.swift; sourceTree = "<group>"; };
 		3E32CDD92898F07E008FDED2 /* AnimeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeData.swift; sourceTree = "<group>"; };
-		3E32CDDB2898FA7B008FDED2 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		3E46A556289B8E0400BEF25D /* WelcomeStatement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeStatement.swift; sourceTree = "<group>"; };
 		3E46A558289B8E1400BEF25D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,7 +149,6 @@
 				3E32CDD72898EC1A008FDED2 /* AnimeDetail.swift */,
 				3E32CDD12898E683008FDED2 /* AnimeRow.swift */,
 				3E32CDD52898E84F008FDED2 /* AnimeList.swift */,
-				3E32CDDB2898FA7B008FDED2 /* CircleImage.swift */,
 				3E46A556289B8E0400BEF25D /* WelcomeStatement.swift */,
 				3E46A558289B8E1400BEF25D /* WelcomeView.swift */,
 			);
@@ -298,7 +295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E32CDD42898E6F5008FDED2 /* Anime.swift in Sources */,
-				3E32CDDC2898FA7B008FDED2 /* CircleImage.swift in Sources */,
 				3E46A557289B8E0400BEF25D /* WelcomeStatement.swift in Sources */,
 				3E32CDD22898E683008FDED2 /* AnimeRow.swift in Sources */,
 				3E32CDA72898E38E008FDED2 /* ContentView.swift in Sources */,

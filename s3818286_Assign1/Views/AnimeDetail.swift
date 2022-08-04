@@ -13,7 +13,7 @@ struct AnimeDetail: View {
     var body: some View {
         ZStack {
                 VStack {
-                    CircleImage(image: anime.image)
+                    
                     Text(anime.name)
                         .font(.system(size: 40))
                         .bold()
