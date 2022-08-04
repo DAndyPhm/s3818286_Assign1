@@ -21,3 +21,9 @@ struct AnimeList: View {
         }
     }
 }
+
+struct AnimeList_Previews: PreviewProvider {
+    static var previews: some View {
+        AnimeList()
+    }
+}

@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct AnimeDetail: View {
+    var anime: Anime
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct AnimeDetail_Previews: PreviewProvider {
-    static var previews: some View {
-        AnimeDetail()
+        ZStack {
+                VStack {
+                    CircleImage(image: anime.image)
+                    Text(anime.name)
+                        .font(.system(size: 40))
+                        .bold()
+                    .foregroundColor(.white)
+                    Image("rmit-logo-white").resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 65)
+                        .padding(.bottom, 5)
+                    
+                }
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        
     }
 }
