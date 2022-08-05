@@ -16,17 +16,20 @@ struct AnimeDetail: View {
                     Text(anime.name)
                         .font(.system(size: 20))
                         .bold()
-                        .foregroundColor(.black)
+                        .foregroundColor(.green)
                     
                     Image(anime.imageName)
                         .resizable()
                         
                     StarRating(rating: anime.rating)
-                    
-                    Text(anime.broadcastYear)
+                    Group{
+                        Text(anime.broadcastYear)
                             .font(.system(size:15))
-                    Text(anime.plot)
-                    Text(anime.review)
+                        Text(anime.plot)
+                            .font(.system(size:20))
+                        Text(anime.review)
+                            .font(.system(size:20))
+                    }.padding().foregroundColor(.green)
                 }
         }
     }

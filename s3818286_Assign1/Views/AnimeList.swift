@@ -15,10 +15,13 @@ struct AnimeList: View {
                     AnimeDetail(anime: anime)
                 } label: {
                     AnimeRow(anime: anime)
+                      
                 }
-                .navigationTitle("My Anime")
+                .navigationTitle("MY ANIME LIST")
+                
             }
         }
+        
     }
 
 }

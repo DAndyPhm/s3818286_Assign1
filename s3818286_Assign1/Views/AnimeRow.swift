@@ -13,12 +13,11 @@ struct AnimeRow: View {
         ZStack {
             Image(anime.imageName)
                 .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 350, height: 200, alignment: .center)
-            Text(anime.name)
-                .bold()
-                .foregroundColor(.orange)
-                .font(.system(size: 23))
+                .frame(width: 300, height: 120, alignment: .center)
+//            Text(anime.name)
+//                .bold()
+//                .foregroundColor(.orange)
+//                .font(.system(size: 23))
             
         }
     }
