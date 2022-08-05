@@ -15,7 +15,7 @@ struct Anime: Identifiable{
     var producer: String
     var broadcastYear: String
     
-    var rating: String
+    var rating: Int
     var plot: String
     var review: String
 

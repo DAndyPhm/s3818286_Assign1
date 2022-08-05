@@ -10,22 +10,35 @@ import SwiftUI
 struct WelcomeView: View {
     @Binding var active: Bool
     var body: some View {
+
+        
         ZStack{
-            Color.blue
+            Color.orange
                 .opacity(0.7) // Setting the color opacity to 0.5
                 .ignoresSafeArea()
             VStack{
-            Text("My Anime recommendation")
-                .foregroundColor(.black)
-                .font(.largeTitle)
-                .bold()
-            
+                Text("My Recommended Anime List")
+                    .font(Font.system(size: 46, weight: .bold))
+                    .multilineTextAlignment(.center)
+                    .overlay {
+                        LinearGradient(
+                            colors: [.purple, .blue, .green, .red],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                        .mask(
+                            Text("My Recommended Anime List")
+                                .font(Font.system(size: 46, weight: .bold))
+                                .multilineTextAlignment(.center)
+                        )
+                        
+                    }
                 
                 Button(action: {
                                     active = false
                                 }, label: {
                                     Capsule()
-                                      .fill(Color.gray.opacity(0.6))
+                                      .fill(Color.blue.opacity(0.6))
                                       .padding(12)
                                       .frame(height:80)
                                       .overlay(Text("CONTINUE")

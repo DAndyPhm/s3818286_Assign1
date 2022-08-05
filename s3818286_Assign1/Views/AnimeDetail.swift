@@ -9,25 +9,27 @@ import SwiftUI
 
 struct AnimeDetail: View {
     var anime: Anime
-    
     var body: some View {
         ZStack {
+            ScrollView{
                 VStack {
                     Text(anime.name)
                         .font(.system(size: 20))
                         .bold()
                         .foregroundColor(.black)
                     
-                    
                     Image(anime.imageName)
                         .resizable()
-                        .scaledToFill()
+                        
+                    StarRating(rating: anime.rating)
                     
                     Text(anime.broadcastYear)
-                        .font(.system(size:15))
-                        
+                            .font(.system(size:15))
+                    Text(anime.plot)
+                    Text(anime.review)
                 }
         }
+    }
         .navigationBarTitleDisplayMode(.inline)
         
     }

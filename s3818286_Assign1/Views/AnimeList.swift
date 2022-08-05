@@ -20,6 +20,7 @@ struct AnimeList: View {
             }
         }
     }
+
 }
 
 struct AnimeList_Previews: PreviewProvider {

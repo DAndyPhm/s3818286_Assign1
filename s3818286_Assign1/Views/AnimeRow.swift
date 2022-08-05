@@ -15,12 +15,11 @@ struct AnimeRow: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 350, height: 200, alignment: .center)
-                
-            
             Text(anime.name)
                 .bold()
                 .foregroundColor(.orange)
                 .font(.system(size: 23))
+            
         }
     }
 }
