@@ -16,7 +16,7 @@ struct AnimeList: View {
                 } label: {
                     AnimeRow(anime: anime)
                 }
-                .navigationTitle("List of my favourite anime")
+                .navigationTitle("My Anime")
             }
         }
     }

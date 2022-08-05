@@ -14,17 +14,22 @@ struct AnimeDetail: View {
         ZStack {
                 VStack {
                     Text(anime.name)
-                        .font(.system(size: 40))
+                        .font(.system(size: 20))
                         .bold()
-                    .foregroundColor(.white)
-                    Image("rmit-logo-white").resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(height: 65)
-                        .padding(.bottom, 5)
+                        .foregroundColor(.black)
                     
+                    
+                    Image(anime.imageName)
+                        .resizable()
+                        .scaledToFill()
+                    
+                    Text(anime.broadcastYear)
+                        .font(.system(size:15))
+                        
                 }
         }
         .navigationBarTitleDisplayMode(.inline)
         
     }
 }
+

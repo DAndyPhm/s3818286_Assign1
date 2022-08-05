@@ -15,7 +15,7 @@ struct WelcomeView: View {
                 .opacity(0.7) // Setting the color opacity to 0.5
                 .ignoresSafeArea()
             VStack{
-            Text("TOP 10 ANIME LIST")
+            Text("My Anime recommendation")
                 .foregroundColor(.black)
                 .font(.largeTitle)
                 .bold()
