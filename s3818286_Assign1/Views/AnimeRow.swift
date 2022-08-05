@@ -10,7 +10,9 @@ import SwiftUI
 struct AnimeRow: View {
     var anime: Anime
     var body: some View {
-        HStack {
+        ZStack {
+            Image(anime.imageName)
+            
             Text(anime.name)
         }
     }

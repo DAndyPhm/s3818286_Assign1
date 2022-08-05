@@ -112,6 +112,7 @@
 				3E32CDD02898E613008FDED2 /* Models */,
 				3E32CDCF2898E600008FDED2 /* Views */,
 				3E32CDA82898E390008FDED2 /* Assets.xcassets */,
+				3E9ACE8D289CCA22000BA04A /* ImageStorage */,
 				3E32CDAA2898E390008FDED2 /* Preview Content */,
 			);
 			path = s3818286_Assign1;
@@ -162,6 +163,13 @@
 				3E32CDD92898F07E008FDED2 /* AnimeData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3E9ACE8D289CCA22000BA04A /* ImageStorage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

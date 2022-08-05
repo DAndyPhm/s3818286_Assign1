@@ -13,6 +13,11 @@ struct Anime: Identifiable{
     var name: String
     var genre: String
     var producer: String
+    var broadcastYear: String
+    
+    var rating: String
+    var plot: String
+    var review: String
 
     var imageName: String
     var image: Image {
