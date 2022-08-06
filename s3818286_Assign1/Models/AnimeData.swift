@@ -15,7 +15,7 @@ var animes : [Anime] = [
     
     Anime(id: 113, name: "Black Lagoon", genre: "Thriller, Adventure", producer: "Madhouse", broadcastYear: "broadcast year: 2006", rating: 4, plot: " ", review:" ", imageName: "Black_Lagoon_Image"),
     
-    Anime(id: 114, name: "Kimetsu no Yaiba - Demon Slayer", genre: "Dark fantasy, Thriller", producer: "Ufotable", broadcastYear: "broadcast year: 2019", rating: 4, plot: " ", review:" ", imageName: " "),
+    Anime(id: 114, name: "Kimetsu no Yaiba - Demon Slayer", genre: "Dark fantasy, Thriller", producer: "Ufotable", broadcastYear: "broadcast year: 2019", rating: 4, plot: " ", review:" ", imageName: "Kimetsu_No_Yaiba_Image"),
     
     Anime(id: 115, name: "One-Punch Man", genre: "Action, Fiction, Comedy", producer: "Madhouse", broadcastYear: "broadcast year: 2015", rating: 4, plot: " ", review:" ", imageName: " "),
     

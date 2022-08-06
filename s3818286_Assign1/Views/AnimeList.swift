@@ -7,6 +7,7 @@
 import SwiftUI
 
 struct AnimeList: View {
+    @AppStorage("isDarkMode") private var isDark = false
     var body: some View {
         NavigationView {
             List(animes){
@@ -15,11 +16,18 @@ struct AnimeList: View {
                     AnimeDetail(anime: anime)
                 } label: {
                     AnimeRow(anime: anime)
-                      
                 }
-                .navigationTitle("MY ANIME LIST")
-                
+
             }
+            .toolbar{
+                ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing){
+                    Button(action:{isDark.toggle()}, label: {
+                        isDark ? Label("Dark", systemImage: "lightbulb.fill") : Label("Dark", systemImage: "lightbulb")
+                    })
+                }
+            }
+            .environment(\.colorScheme, isDark ? .dark : .light)
+            .navigationTitle("MY ANIME LIST")
         }
         
     }

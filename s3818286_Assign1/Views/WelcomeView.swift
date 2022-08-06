@@ -13,9 +13,11 @@ struct WelcomeView: View {
 
         
         ZStack{
-            Color.orange
-                .opacity(0.7) // Setting the color opacity to 0.5
-                .ignoresSafeArea()
+            Image("Anime_Background")
+                .opacity(0.3)
+                .scaledToFit()
+                .frame(width: 100, height: 600)
+                
             VStack{
                 Text("My Recommended Anime List")
                     .font(Font.system(size: 46, weight: .bold))
@@ -28,10 +30,9 @@ struct WelcomeView: View {
                         )
                         .mask(
                             Text("My Recommended Anime List")
-                                .font(Font.system(size: 46, weight: .bold))
+                                .font(Font.system(size: 46, weight: .bold, design: .rounded))
                                 .multilineTextAlignment(.center)
                         )
-                        
                     }
                 
                 Button(action: {

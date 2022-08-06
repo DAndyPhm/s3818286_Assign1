@@ -9,32 +9,46 @@ import SwiftUI
 
 struct AnimeDetail: View {
     var anime: Anime
+    @AppStorage("isDarkMode") private var isDark = false
     var body: some View {
         ZStack {
             ScrollView{
                 VStack {
                     Text(anime.name)
-                        .font(.system(size: 20))
+                        .font(.system(size: 30))
                         .bold()
-                        .foregroundColor(.green)
+                        .foregroundColor(.blue)
+                        
                     
-                    Image(anime.imageName)
-                        .resizable()
+                    VideoView(videoID: "MGRm4IzK1SQ&t=13s")
+                        .cornerRadius(12)
+                        .padding(.horizontal, 24)
                         
                     StarRating(rating: anime.rating)
                     Group{
+                        Text(anime.genre)
+                            .font(.system(size:15))
                         Text(anime.broadcastYear)
                             .font(.system(size:15))
                         Text(anime.plot)
                             .font(.system(size:20))
                         Text(anime.review)
                             .font(.system(size:20))
-                    }.padding().foregroundColor(.green)
+                    }.padding().foregroundColor(.blue)
                 }
+                .toolbar{
+                    ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing){
+                        Button(action:{isDark.toggle()}, label: {
+                            isDark ? Label("Dark", systemImage: "lightbulb.fill") : Label("Dark", systemImage: "lightbulb")
+                        })
+                    }
+                }
+                .environment(\.colorScheme, isDark ? .dark : .light)
+            }
+            
         }
-    }
         .navigationBarTitleDisplayMode(.inline)
-        
     }
+    
 }
 

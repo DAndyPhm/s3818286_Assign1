@@ -21,6 +21,7 @@
 		3E32CDDA2898F07E008FDED2 /* AnimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E32CDD92898F07E008FDED2 /* AnimeData.swift */; };
 		3E46A557289B8E0400BEF25D /* WelcomeStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E46A556289B8E0400BEF25D /* WelcomeStatement.swift */; };
 		3E46A559289B8E1400BEF25D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E46A558289B8E1400BEF25D /* WelcomeView.swift */; };
+		3E7156E6289E36C300C0373B /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7156E5289E36C300C0373B /* VideoView.swift */; };
 		3E9ACE8F289CF0E3000BA04A /* StarRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9ACE8E289CF0E3000BA04A /* StarRating.swift */; };
 		3E9ACE95289CF883000BA04A /* Attack_On_Titan_Image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E9ACE94289CF883000BA04A /* Attack_On_Titan_Image2.jpg */; };
 		3E9ACE97289CF88C000BA04A /* Attack_On_Titan_Image1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3E9ACE96289CF88C000BA04A /* Attack_On_Titan_Image1.jpeg */; };
@@ -62,6 +63,7 @@
 		3E32CDD92898F07E008FDED2 /* AnimeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeData.swift; sourceTree = "<group>"; };
 		3E46A556289B8E0400BEF25D /* WelcomeStatement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeStatement.swift; sourceTree = "<group>"; };
 		3E46A558289B8E1400BEF25D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		3E7156E5289E36C300C0373B /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		3E9ACE8E289CF0E3000BA04A /* StarRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRating.swift; sourceTree = "<group>"; };
 		3E9ACE94289CF883000BA04A /* Attack_On_Titan_Image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Attack_On_Titan_Image2.jpg; path = ../../../../../../Downloads/Attack_On_Titan_Image2.jpg; sourceTree = "<group>"; };
 		3E9ACE96289CF88C000BA04A /* Attack_On_Titan_Image1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Attack_On_Titan_Image1.jpeg; path = ../../../../../../Downloads/Attack_On_Titan_Image1.jpeg; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				3E46A556289B8E0400BEF25D /* WelcomeStatement.swift */,
 				3E46A558289B8E1400BEF25D /* WelcomeView.swift */,
 				3E9ACE8E289CF0E3000BA04A /* StarRating.swift */,
+				3E7156E5289E36C300C0373B /* VideoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				3E32CDDA2898F07E008FDED2 /* AnimeData.swift in Sources */,
 				3E32CDD82898EC1A008FDED2 /* AnimeDetail.swift in Sources */,
 				3E32CDD62898E84F008FDED2 /* AnimeList.swift in Sources */,
+				3E7156E6289E36C300C0373B /* VideoView.swift in Sources */,
 				3E32CDA52898E38E008FDED2 /* s3818286_Assign1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
