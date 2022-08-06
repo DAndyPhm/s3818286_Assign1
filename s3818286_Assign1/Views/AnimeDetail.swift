@@ -9,7 +9,6 @@ import SwiftUI
 
 struct AnimeDetail: View {
     var anime: Anime
-    @AppStorage("isDarkMode") private var isDark = false
     var body: some View {
         ZStack {
             ScrollView{
@@ -18,34 +17,30 @@ struct AnimeDetail: View {
                         .font(.system(size: 30))
                         .bold()
                         .foregroundColor(.blue)
+                        .font(.title)
                         
                     
-                    VideoView(videoID: "MGRm4IzK1SQ&t=13s")
-                        .cornerRadius(12)
-                        .padding(.horizontal, 24)
-                        
-                    StarRating(rating: anime.rating)
+                    VideoView(videoID: anime.videoID)
+                        .frame(width: 400, height: 400)
+                        .fixedSize()
+                    
                     Group{
-                        Text(anime.genre)
-                            .font(.system(size:15))
-                        Text(anime.broadcastYear)
-                            .font(.system(size:15))
-                        Text(anime.plot)
+                    StarRating(rating: anime.rating)
+                    Text("Genre: \(anime.genre)")
+                        .font(.system(size:15))
+                    Text("Broadcast Year: \(anime.broadcastYear)")
+                        .font(.system(size:15))
+                    }
+                    .foregroundColor(.blue)
+                    Group{
+                        
+                        Text("Plot: \(anime.plot)")
                             .font(.system(size:20))
-                        Text(anime.review)
+                        Text("My thoughts: \(anime.review)")
                             .font(.system(size:20))
                     }.padding().foregroundColor(.blue)
                 }
-                .toolbar{
-                    ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing){
-                        Button(action:{isDark.toggle()}, label: {
-                            isDark ? Label("Dark", systemImage: "lightbulb.fill") : Label("Dark", systemImage: "lightbulb")
-                        })
-                    }
-                }
-                .environment(\.colorScheme, isDark ? .dark : .light)
             }
-            
         }
         .navigationBarTitleDisplayMode(.inline)
     }

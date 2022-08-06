@@ -27,7 +27,7 @@ struct AnimeList: View {
                 }
             }
             .environment(\.colorScheme, isDark ? .dark : .light)
-            .navigationTitle("MY ANIME LIST")
+            .navigationTitle("MY ANIME LIST").foregroundColor(.blue)
         }
         
     }

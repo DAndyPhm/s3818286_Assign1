@@ -23,4 +23,6 @@ struct Anime: Identifiable{
     var image: Image {
         Image(imageName)
     }
+    
+    var videoID: String
 }
